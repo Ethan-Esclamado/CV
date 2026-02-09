@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+  }
+
+.top-section {
+  background: linear-gradient(#338DBD, white);
+}
+
+.bottom-section {
+  padding: 0 60px 0 60px
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+nav.links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+  .theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #002a51;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #002a51;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #002a51;
+  color: white;
+}
+
+
+.dark-theme .theme-toggle {
+    border-color: #555;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav button {
+  align-items: center;
+}
+
+nav p {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+footer p {
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*********** Splash Page ************************/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  color: #002a51;
+  font-size: 50px;
+}
+
+header img {
+  border: solid #002a51 4px;
+  border-radius: 5px;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+}
+
+.tagline {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+}
+
+/************* Sections ********************/
+hr {
+  width: 90%;
+}
+
+section h2 {
+  font-family: 'Merriweather', serif;
+  color: #002a51;
+  padding-left: 10px;
+}
+
+section h3 {
+  font-family: 'Merriweather', serif;
+  color: #002a51;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-left: 10px;
+}
+
+section dd {
+  display: grid;
+  justify-content: flex-end;
+  padding: 0 10px 0 0;
+}
+
+section ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+section a {
+  text-decoration: none;
+  color: #002a51;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* three cards side by side */
+  gap: 10px;
+}
+
+.card img {
+  border: solid #002a51 2px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.card {
+  text-align: center;
+}
+
+.projects ul {
+  list-style-type: disc;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .card {
+      width: 90%;
+      text-align: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+label {
+  font-family: 'Merriweather', serif;
+  color: #002a51;
+}
+
+input {
+  border-radius: 3px;
+  font-family: 'Merriweather', serif;
+}
+
+input[type="text"] {
+  width: 10%;
+}
+
+input[type="email"] {
+  width: 15%;
+}
+
+textarea {
+  width: 20%;
+  border-radius: 3px;
+  font-family: 'Merriweather', serif;
+}
+
+button {
+  width: 5%;
+}
+
+.contact-info {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+/* --- Dark Mode Styles --- */
+
+/* 1. The main background and text */
+body.dark-theme {
+  background-color: #121212; /* Deep dark grey/black */
+  color: #e0e0e0;            /* Soft white for readability */
+}
+
+/* 2. Adjust the top section gradient for dark mode */
+body.dark-theme .top-section {
+  background: linear-gradient(#002a51, #121212);
+}
+
+/* 3. Adjust Headings and Links */
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3,
+body.dark-theme section a,
+body.dark-theme label {
+  color: #82b1ff; /* A lighter, high-contrast blue for dark background */
+}
+
+body.dark-theme nav a {
+  color: #e0e0e0;
+}
+
+/* 4. Adjust the horizontal rule */
+body.dark-theme hr {
+  border-color: #333;
+}
+
+/* 5. Update the card images/shadows for dark mode */
+body.dark-theme .card img {
+  border-color: #82b1ff;
+  box-shadow: 10px 10px 5px #000000;
+}
+
+/* 6. Footer adjustment */
+body.dark-theme footer {
+  background-color: #1a1a1a;
+}
+body.dark-theme footer a {
+  color: #e0e0e0;
+}
