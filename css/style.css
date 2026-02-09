@@ -21,12 +21,6 @@ nav {
   margin-bottom: 10px;
 }
 
-nav.links {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  align-items: center;
-}
 
   .theme-toggle {
   display: flex;
@@ -54,6 +48,7 @@ nav.links {
 
 nav button {
   align-items: center;
+  margin-left: 50px;
 }
 
 nav p {
@@ -150,6 +145,19 @@ section dd {
 section ul {
   list-style-type: none;
   padding-left: 10px;
+}
+
+ul li {
+  background: #f4f4f4;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section a {
