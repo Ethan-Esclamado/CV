@@ -32,8 +32,6 @@ nav {
   align-items: center;
   font-family: 'Merriweather', serif;
   font-size: 15px;
-  /*
-  margin-bottom: 10px; */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -57,12 +55,6 @@ nav {
 .theme-toggle:hover {
   background-color: #002a51;
   color: white;
-}
-
-
-.dark-theme .theme-toggle {
-    border-color: #555;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav button {
@@ -335,4 +327,9 @@ body.dark-theme footer a {
 
 .dark-theme nav a {
   color: #e0e0e0;
+}
+
+.dark-theme .theme-toggle {
+    border-color: #555;
+    background-color: rgba(255, 255, 255, 0.1);
 }
