@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Ethan Esclamado</title>
+  </head>
     <title>Ethan Esclamado</title>
   </head>
   <body>
@@ -14,6 +17,8 @@
     <div class="top-section">
     <nav>
         <p>Ethan Esclamado</p>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i></button>
         <p><a href="index.html">About Ethan Esclamado</a></p>
     </nav>
 
@@ -22,8 +27,8 @@
     <p>4535 Wembly Place, Cumming, GA, 30041 &centerdot; 678-477-8973 &centerdot; ethandominic@bellsouth.net</p>
     </div>
     </div>
-    </body>
-    <hr>
+    <hr class="contact-hr">
+    <div class="contact-body">
     <form class="one-col" action="https://formsubmit.co/d71b59f17ae620bd0ef3a5783307a74c" method="POST">
         <label>Name:</label>
         <input class="text" type="text" name="name" placeholder="name" required>
@@ -33,10 +38,12 @@
         <textarea name="message" rows="3" cols="21"></textarea>
         <button type="submit">Submit</button>
     </form>
+    </div>
     <br>
     <footer>
-        &copy; <a href="index.html">Ethan Esclamado</a> <a href="https://www.linkedin.com/in/ethanesclamado" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <p>&copy; <a href="index.html">Ethan Esclamado</a> <a href="https://www.linkedin.com/in/ethanesclamado" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
     </footer>
     
+    <script src="javascript/script.js"></script>
   </body>
 </html>

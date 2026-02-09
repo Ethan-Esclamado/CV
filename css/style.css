@@ -2,6 +2,10 @@ body {
     margin: 0;
   }
 
+  .contact-body {
+    margin-left: 2%;
+  }
+
 .top-section {
   background: linear-gradient(#338DBD, white);
 }
@@ -22,7 +26,7 @@ nav {
 }
 
 
-  .theme-toggle {
+.theme-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,6 +121,11 @@ header img {
 /************* Sections ********************/
 hr {
   width: 90%;
+}
+
+.contact-hr {
+
+  width: 95%;
 }
 
 section h2 {
@@ -250,6 +259,7 @@ button {
   font-family: 'Merriweather', serif;
   font-size: 15px;
   padding-left: 10px;
+  margin-left: 2%;
 }
 
 /* --- Dark Mode Styles --- */

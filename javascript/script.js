@@ -12,6 +12,13 @@ toggleBtn.addEventListener('click', () => {
         theme = 'dark';
     }
     localStorage.setItem('theme', theme);
+
+    // Save the mode between pages
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 });
 
 // On page load:
