@@ -289,7 +289,13 @@ body.dark-theme .card img {
   box-shadow: 10px 10px 5px #000000;
 }
 
-/* 6. Footer adjustment */
+/* 6. Update list buttons */
+body.dark-theme ul li {
+  background: #333;
+  color: #e0e0e0;
+}
+
+/* 7. Footer adjustment */
 body.dark-theme footer {
   background-color: #1a1a1a;
 }
