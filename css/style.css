@@ -294,18 +294,18 @@ button {
 
 /* --- Dark Mode Styles --- */
 
-/* 1. The main background and text */
+/* Main background and text */
 body.dark-theme {
   background-color: #121212; /* Deep dark grey/black */
   color: #e0e0e0;            /* Soft white for readability */
 }
 
-/* 2. Adjust the top section gradient for dark mode */
+/* Top section gradient */
 body.dark-theme .top-section {
   background: linear-gradient(#002a51, #121212);
 }
 
-/* 3. Adjust Headings and Links */
+/* Headings and links */
 body.dark-theme h1, 
 body.dark-theme h2, 
 body.dark-theme h3,
@@ -318,12 +318,12 @@ body.dark-theme nav a {
   color: #e0e0e0;
 }
 
-/* 4. Adjust the horizontal rule */
+/* 4. Horizontal rule */
 body.dark-theme hr {
   border-color: #333;
 }
 
-/* 5. Update the card images/shadows for dark mode */
+/* UCard images/shadows */
 body.dark-theme .card img {
   border-color: #82b1ff;
   box-shadow: 10px 10px 5px #000000;
