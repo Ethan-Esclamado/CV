@@ -25,3 +25,20 @@ toggleBtn.addEventListener('click', () => {
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-theme');
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // Add class when visible
+        } 
+        // Optional: Remove 'else' block if you want them to stay visible once animated
+        else {
+            // Remove the class when the element leaves the screen
+            entry.target.classList.remove('show'); 
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

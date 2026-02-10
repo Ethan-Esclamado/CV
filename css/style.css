@@ -28,7 +28,7 @@ body {
 nav {
   display: flex;
   padding: 15px 20px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
   font-family: 'Merriweather', serif;
   font-size: 15px;
@@ -59,11 +59,15 @@ nav {
 
 nav button {
   align-items: center;
-  margin-left: 50px;
 }
 
 nav p {
+  flex: 1;
   margin: 0;
+}
+
+nav p:last-child {
+  text-align: right;
 }
 
 nav a {
@@ -183,6 +187,25 @@ section a {
 
 section a:hover {
   text-decoration: underline;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;      /* Space between tags */
+    padding: 0;
+}
+
+.skills-list li {
+    /* Override the default block width */
+    width: fit-content; 
+    margin: 0;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: #e0f7fa; /* Light blue background */
+    color: #002a51;      /* Darker text for contrast */
+    border: 1px solid #b2ebf2;
 }
 
 /**************   Projects   *****************/
@@ -332,4 +355,21 @@ body.dark-theme footer a {
 .dark-theme .theme-toggle {
     border-color: #555;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .skills-list li {
+    background: #2c3e50;
+    color: #82b1ff;
+    border-color: #34495e;
+}
+
+/* Scroll Reveal */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px); /* Push it down 30px */
+    transition: all 0.8s ease-out; /* Smooth transition */
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
