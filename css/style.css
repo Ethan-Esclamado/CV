@@ -24,6 +24,15 @@ body {
   padding: 0 60px 0 60px
 }
 
+section {
+  margin-top: 50px;
+  border: solid #002a51 2px;
+  border-radius: 8px;
+  border-width: 2px 0 2px 0;
+  max-width: 1100px;
+  box-shadow: 10px 10px 10px #aaaaaa;
+}
+
 /****************   Nav Section **********************/
 nav {
   display: flex;
@@ -131,18 +140,39 @@ header img {
 
 /************* Sections ********************/
 hr {
-  width: 90%;
+  width: 65%;
 }
 
 .contact-hr {
-
   width: 95%;
+}
+
+.education {
+  margin-left: 60px;
+}
+
+.honors {
+  margin-left: 210px;
+}
+
+.skills {
+  margin-left: 60px;
+}
+
+.leadership {
+  margin-left: 210px;
+}
+
+.projects {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section h2 {
   font-family: 'Merriweather', serif;
   color: #002a51;
-  padding-left: 10px;
+  /*padding-left: 6%;*/
+  padding-left: 15px;
 }
 
 section h3 {
@@ -153,18 +183,17 @@ section h3 {
 section dl {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  padding-left: 10px;
+  padding: 0 15px 0 15px;
+
 }
 
 section dd {
   display: grid;
   justify-content: flex-end;
-  padding: 0 10px 0 0;
 }
 
 section ul {
   list-style-type: none;
-  padding-left: 10px;
 }
 
 ul li {
@@ -193,7 +222,7 @@ section a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;      /* Space between tags */
-    padding: 0;
+    padding-left: 15px;
 }
 
 .skills-list li {
@@ -213,6 +242,7 @@ section a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* three cards side by side */
   gap: 10px;
+  padding: 0 6% 0 6%;
 }
 
 .card img {
@@ -223,6 +253,7 @@ section a:hover {
 
 .card {
   text-align: center;
+  
 }
 
 .projects ul {
@@ -318,7 +349,7 @@ body.dark-theme nav a {
   color: #e0e0e0;
 }
 
-/* 4. Horizontal rule */
+/* Horizontal rule */
 body.dark-theme hr {
   border-color: #333;
 }
@@ -329,13 +360,13 @@ body.dark-theme .card img {
   box-shadow: 10px 10px 5px #000000;
 }
 
-/* 6. Update list buttons */
+/* Update list buttons */
 body.dark-theme ul li {
   background: #333;
   color: #e0e0e0;
 }
 
-/* 7. Footer adjustment */
+/* Footer adjustment */
 body.dark-theme footer {
   background-color: #1a1a1a;
 }
